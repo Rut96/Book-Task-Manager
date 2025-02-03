@@ -1,0 +1,68 @@
+.Menu {
+    height: 100%;
+    background-image: url('../../../Assets/Images/book-shelf.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+        inset 0 20px 25px -5px rgba(0, 0, 0, 0.3),
+        inset -10px 0 15px -5px rgba(0, 0, 0, 0.2),
+        inset 10px 0 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-header {
+    height: 25%;
+    background: linear-gradient(rgba(139, 69, 19, 0.2), transparent);
+}
+
+.logo {
+    text-align: center;
+    font-family: "Lexend Giga", serif;
+    font-size: 24px;
+    line-height: 10px;
+    padding-top: 1rem;
+    /* color: #4a3000; */
+    color: #F1D7C2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu-shelves {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.shelf-link {
+    text-decoration: none;
+    color: #4a3000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.shelf-link:hover {
+    background: linear-gradient(90deg,
+            rgba(139, 69, 19, 0.1),
+            rgba(139, 69, 19, 0.2),
+            rgba(139, 69, 19, 0.1));
+    transform: translateX(5px);
+}
+
+.shelf-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.shelf-link.active {
+    background: linear-gradient(90deg,
+            rgba(139, 69, 19, 0.2),
+            rgba(139, 69, 19, 0.3),
+            rgba(139, 69, 19, 0.2));
+}

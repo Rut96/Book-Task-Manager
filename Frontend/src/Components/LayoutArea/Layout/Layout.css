@@ -1,0 +1,16 @@
+.Layout {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    /* background-color: #F3F3F7; */
+    overflow: auto;  
+    position: relative;  
+    height: 100vh;  
+
+    background-image: url(../../../Assets/Images/back3.jpg);
+    background-size: cover;
+}

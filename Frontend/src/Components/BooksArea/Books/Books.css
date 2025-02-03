@@ -1,0 +1,62 @@
+.Books {
+    min-height: calc(100vh - 80px);  
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: "Lexend Giga", serif;
+}
+
+.books-header {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.books-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    /* color: #1a1a1a; */
+    color: #713C1F;
+    margin-bottom: 1.5rem;
+}
+
+.books-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.books-loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.books-error {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc3545;
+    font-size: 1.1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
