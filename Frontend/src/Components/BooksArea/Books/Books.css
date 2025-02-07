@@ -20,10 +20,19 @@
 
 .books-container {
     max-width: 1200px;
+    display: flex;
+    
+    /* margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    /* gap: 1.5rem; */
+    /* gap: 3rem; */
+
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .books-loading {
